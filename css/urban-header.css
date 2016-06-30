@@ -252,6 +252,48 @@ display: inline-block;
     width: 22%;
 }
 
+#subhead{
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 50px;
+    height: 35px;
+    background: rgba(255,255,255, .9);
+    border-bottom: solid 1px #ccc;
+  
+}
+
+#subhead ul li{
+display: inline-block;
+    width: 24%;
+    width: calc(100/4);
+    text-align: center;
+text-transform: uppercase;
+    font-size:13px;
+
+}
+
+#subhead a{
+   color:#333;
+   display: block;
+   padding:10px;
+    
+}
+
+#subhead .active {
+  border-bottom: solid 3px #1696d2; 
+    color:#1696d2; 
+    padding-bottom: 8px;
+}
+
+#subhead a:hover{
+  background-color:rgba(22,150,210, .8);
+  color:#fff;
+
+    
+}
+
+
 @media(max-width:767px) {
 .header-links ul li {
         width:28%;
