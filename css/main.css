@@ -1,0 +1,229 @@
+body {
+    font-family: Lato, sans-serif !important;
+    background: white;
+}
+
+.graphtitle {
+    font-size: 18px;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 14px;
+}
+#title{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+      font-size: 15px;
+    font-weight: 600;
+}
+#notes{
+    font-size: 11px;
+    font-style: italic;
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+}
+.fullwidth {
+    width: 100%;
+}
+
+.axis,
+.axis-show {
+    font-size: 12px;
+    color: #333;
+}
+
+.axis path {
+    display: none;
+}
+.axis-show.a2, .axis-show.a1{
+    display: none;
+}
+
+.axis line {
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis .minor line {
+    stroke: #efefef;
+}
+
+.axis-show path,
+.axis-show line {
+    fill: none;
+    stroke-width: 1px;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.chartline {
+    fill: none;
+    stroke-width: 1px;
+    stroke: #333333;
+    shape-rendering: crispEdges;
+}
+
+.point-label {
+    font-size: 12px;
+}
+
+.legend {
+    font-size: 13px;
+}
+
+.bar {
+    fill: #1696d2;
+}
+rect.ammenities_0, rect.leave_0{
+    fill: #d2d2d2;
+}
+rect.health_0{
+    fill: #fdbf11;
+}
+
+.annotate-shape {
+    fill: #ebebeb;
+}
+
+.annotation {
+    font-size: 13px;
+}
+
+.annotate-line {
+    fill: none;
+    stroke-width: 1.5px;
+    stroke: #ccc;
+    shape-rendering: crispEdges;
+}
+
+.axistitle {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.income1 {
+    /*fill: #ec008b;*/
+    fill: #000;
+}
+
+.income2 {
+    fill: #fdbf11;
+}
+
+.income3 {
+    /*fill: #55b748;*/
+    fill: #1696d2;
+}
+
+.lowlight {
+    opacity: 0.2;
+}
+
+
+/*Graph 3*/
+
+#graphtext {
+    min-height: 5em;
+    display: block;
+    margin-top: 0.5em;
+}
+
+#buttons {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+}
+
+.button {
+    color: #ffffff;
+    background-color: #666666;
+    display: inline-block;
+    width: 20px;
+    padding: 3px;
+    cursor: pointer;
+    font: 14px Lato;
+    font-weight: 900;
+    float: left;
+    text-align: center;
+    border: 1px solid #fff;
+    cursor: pointer;
+    pointer-events: visible;
+}
+
+.greyed,
+.greyed:hover {
+    color: #fff;
+    background-color: #e6e7e8 !important;
+    /*pointer-events: none;*/
+    cursor: default;
+}
+
+.button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#arrow{
+    display: block;
+    position: absolute;
+    top: 184px;
+    left: calc(90px + 46%);
+}
+#arrowDown{
+    display: none;
+}
+#arrow img{
+    width: 69%;
+}
+
+#tabletTest, #phoneTest{
+    display: none;
+    position: fixed;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+@media (max-width:605px){
+    #tabletTest{
+        display: block;
+    }
+    #arrow{
+        display: none;
+    }
+    #arrowDown{
+        display: block;
+        position: absolute;
+        top: 297px;
+        left: calc(50% + 10px);
+    }
+    #arrowDown img{
+        height: 59px !important;
+    }
+}
+
+@media (max-width:470px){
+    #phoneTest{
+        display: block;
+    }
+    #arrow{
+        display: none;
+    }
+    #arrowDown{
+        position: absolute;
+        top: 576px;
+        left: 50%;
+    }
+    #arrowDown img{
+        height: 49px !important;
+    }
+    .subtitle{
+        font-size: 12px;
+    }
+    #title{
+        left: 10px;
+    }
+}

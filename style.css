@@ -1,0 +1,1123 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+     border: 0px none;
+     margin: 0px;
+     padding: 0px;
+     vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+     display: block;
+}
+
+body, html {
+     color: #000;
+     font-family: "Lato",sans-serif;
+     font-size: 16px;
+     height: 100%;
+     line-height: 1.2;
+     margin: 0px;
+     padding: 0px;
+     text-align: left;
+}
+
+ol, ul {
+     list-style: outside none none;
+}
+
+blockquote, q {
+     quotes: none;
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+     content: none;
+}
+
+table {
+     border-collapse: collapse;
+     border-spacing: 0px;
+}
+
+*, *::before, *::after {
+     box-sizing: border-box;
+}
+
+.clearfix::after {
+     clear: both;
+     content: "";
+     display: table;
+}
+
+#wrapper{
+    position: relative;
+    width:100%;
+    
+}
+
+
+a{
+ color:#1696d2;
+ text-decoration: none;
+   
+}
+
+a:hover{
+ color:#000;
+ text-decoration: none;    
+    
+}
+
+h1{
+    font-weight: 700;
+    font-size:35px;
+    color:#000;
+    margin-bottom: 5px;
+}
+
+
+h5{
+  color:#666;
+ font-size:22px;
+ text-transform: none;
+    font-weight: 300;
+    
+}
+
+
+
+
+.credits{
+  font-size:12px;
+    text-transform: uppercase;
+    color:#666;
+    padding-bottom: 30px;
+  
+}
+
+
+
+/*social media icons on index*/
+#homesocial{
+    width: 175px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+#homesocial a{
+margin-right:5px;
+    
+}
+
+#homesocial a:hover{
+    opacity: .5;
+    
+}
+
+
+p{
+    color:#000;   
+}
+
+.lead{
+    font-size:19px;  
+}
+
+.emphasis{
+    font-style: italic; 
+}
+
+.bold{
+    font-weight:700;
+    
+}
+
+/*this is the smaller screens menu option*/
+
+#mobilenavcontainer{
+    display: none;
+}
+
+.mobile{
+  display: none;
+position: relative;
+width: 100%;
+top: 65px;
+height: 40px;
+margin-left: 0px;
+margin-top: 0px;
+
+}
+.mobile div{
+    display: none;
+    top: 65px;
+position: relative;
+}
+
+.mobile button {
+position: absolute;
+top: 0px;
+right: 0px;
+border: 0;
+text-indent: 200%;
+overflow: hidden;
+background: rgba(255,255,255,0.8) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+border: 1px solid #ddd;
+border-radius: 3px;
+background-size: 80%;
+width: 40px;
+height: 40px;
+outline: none;
+-webkit-transition: all 400ms ease;
+transition: all 400ms ease;
+}
+
+.mobile button.expanded {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: transparent;
+
+}
+.mobile a {
+  display: block;
+     background: #eee;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+
+.mobile a:hover,
+.mobile a:active,
+mobile a:focus {
+  background: #e7e7e7;
+}
+
+/*URBAN STICKY HEADER
+.urbanHeader{
+position: fixed;
+top: 0px;
+z-index: 1030;
+width: 100%;
+background-color: #fff;
+border: solid 1px #e7e7e7;
+}
+#share {
+    height: 48px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+
+    position: relative;
+}
+#logo {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+#share p{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 30px;
+    position: relative;
+    bottom: 20px;
+}
+
+#share p a{
+    color:#333;
+    
+}
+#share p a:hover{
+   color:#1696d2;
+}
+
+.urbanHeaderLabel{
+    display:inline-block;
+}
+
+.urbanHeaderLabelMobile{
+    display: none;
+}
+#shareMaster {
+    display: inline !important;
+    float: right;
+    height: 48px;
+    opacity: 1;
+    padding-left: 20px;
+    width: 70px;
+}
+.circle {
+    background-color: #cccccc;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+    margin-top: 10px;
+    text-align: center;
+    width: 25px;
+}
+.circle:hover {
+    background-color: #0096d2;
+}
+#socials a {
+    color: #ffffff;
+}
+#socials a:hover {
+    color: #0096d2;
+}
+#socials {
+    color: #ffffff;
+    float: right;
+    opacity: 0;
+    transition-delay: 0s;
+    transition-duration: 0.25s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+}
+#share:hover #shareMaster {
+    opacity: 0.5;
+    transition-delay: 0s;
+    transition-duration: 0.25s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+}
+#share:hover #socials {
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.25s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+/************************************************CLOSE URBAN STICKY HEADER*/
+
+
+/*sidebar structure */
+#sidebar{
+width: 250px;
+height: 100%;
+position: fixed;
+top:0;
+bottom: 0;
+     padding:0;
+    margin:0;
+    display: inherit;
+}
+
+
+#sidebar ul{
+height: 100%;
+    padding:0;
+    margin:0;
+    
+}
+
+
+
+#sidebar ul li {
+    list-style: none;
+    background-color:#fff;
+    float: left;
+    width:250px;
+    height: 24%; /* fallback for non-calc() browsers */
+   height: calc(100% / 4);
+    box-sizing: border-box;  
+    text-transform: uppercase;
+    color:#fff;
+    
+}
+
+
+h4{
+    font-size: 21px;
+    font-weight: 400;
+    color:#fff;
+  text-transform:capitalize;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+#sidebar p{
+color: #e6e6e6;
+margin-left: 55px; 
+    font-size:14px;
+
+}
+
+
+#photo1 {
+    background-image: url(img/photo1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;  
+    
+}
+
+#photo2{
+    background-image: url(img/photo2.jpg);
+        background-repeat:no-repeat;  
+    background-size: cover;  
+}
+
+#photo3{
+    background-image: url(img/photo3.jpg);
+        background-repeat:no-repeat;
+      background-size: cover;  
+}
+
+#photo4{
+    background-image: url(img/photo4.jpg);
+        background-repeat:no-repeat;
+      background-size: cover;  
+}
+
+#photo1 a, #photo2 a, #photo3 a, #photo4 a{
+    width:100%;
+    height:100%;
+    display: block;
+      color:#fff;
+}
+
+#photo1 a:hover, #photo2 a:hover, #photo3 a:hover, #photo4 a:hover{
+    background-color: rgba(22, 150, 210, 0.7);
+   
+
+   
+}
+
+
+
+/*sidebar story title alignments */
+
+#photo1 h4{
+position: absolute;
+bottom: 79%;
+margin-left: 15px;
+}
+
+#photo2 h4{
+ position: absolute;
+    bottom: 57%;
+    margin-left: 15px;       
+}
+
+#photo3 h4{
+   position: absolute;
+    bottom: 32%;
+    margin-left: 15px;     
+}
+
+#photo4 h4{
+ position: absolute;
+    bottom: 7.4%;
+    margin-left: 15px;       
+}
+
+
+/*general topic labels*/
+#photo1 p{
+position: absolute;
+bottom: 78%;
+}
+
+#photo2 p{
+position: absolute;
+bottom: 53%;
+}
+
+#photo3 p{
+position: absolute;
+bottom: 28%;
+}
+
+#photo4 p{
+position: absolute;
+bottom: 3%;
+}
+
+
+
+/*sidebar icon placement*/
+#sidebar img{
+margin-left: 15px;
+margin-top: 10px;
+}
+
+
+#photo1 img{
+    position: absolute;
+    bottom: 78%;
+}
+
+#photo2 img{
+    position: absolute;
+    bottom: 53%;    
+}
+#photo3 img{
+     position: absolute;
+    bottom: 28%;   
+}
+#photo4 img{
+     position: absolute;
+    bottom: 3%;   
+}
+
+/* wrapper that holds the homepage intro text written by Serena Lei*/
+#homecontainer{
+width:950px;
+margin:0 auto;
+padding-left:250px;
+padding-top:370px;
+
+}
+
+#homecontainer p{
+margin-bottom:15px;
+}
+
+
+.reddot{
+    display: block;
+    padding-top:25px;
+}
+
+.reddotsmall{
+  display: none;  
+}
+
+
+.readmore{
+    font-weight: 700;
+}
+
+/**********twitter styles******/
+.callOut{
+  font-size:27px;
+  color:#666;
+    font-weight: 300;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:3px;
+    background-color:#fff;
+    line-height: 1.4;
+
+    
+}
+
+
+.callOut a{
+   color:#fff;
+    background-color:#1696d2;
+}
+.callOut a:hover{
+    color:#fff;
+    background-color:#000;
+}
+
+.twittercallout{
+float: right;
+width: 40%;
+padding: 0px 0px 50px 30px;
+    
+}
+/**************** story page *******************/
+
+
+/*image at top of each story*/
+.leadimage{
+  height:400px;
+  width:100%;
+    position: relative;
+    top:50px;
+    
+}
+
+#nfp{
+    background-image: url(img/nfp/start.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*close image at top of each story*/
+
+#app{
+    background-image: url(img/app/3074.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#ghhi{
+    background-image: url(img/ghhi/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/**** headroom.js that allows the header to appear on scroll up **/
+
+#header{
+    top: 50px;
+    position: fixed;
+    width: 295px;
+    z-index: 20;
+    height: 50px;
+    background-color: rgba(255,255,255,.7);
+}
+
+nav{
+margin-left: 20px;
+margin-top:10px;
+}
+
+nav img{
+padding-right:5px;
+}
+
+/* .slide {
+     transition: all 0.25s ease-in-out 0s;
+}
+
+.slide--reset {
+     transform: translateY(0px);
+}
+
+.slide--up {
+     transform: translateY(-230%);
+}
+
+.animated {
+     animation-duration: 0.5s;
+     animation-fill-mode: both;
+}
+*/
+
+/*wrapper for nonlanding page images */
+.storywrapper{
+width:950px;
+margin:0 auto;
+padding-top:80px;
+}
+/*close wrapper*/
+
+
+/*container for nonlanding page content */
+
+.container{
+width: 700px;
+margin: 0 auto;
+padding: 45px 30px 25px;
+clear: both;
+}
+    
+/*close container*/
+ 
+.date{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #666;
+    padding-bottom: 15px;
+    margin-top: 0px;
+}
+
+
+
+
+/*story title */  
+H2{
+    font-style: italic;
+    font-size:32px;
+    color:#1696d2;
+    font-weight: 400;
+}
+/*close story title */    
+
+
+/*section title */  
+h3{
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+/*close section title */  
+
+/*story summary*/
+h6{
+  color:#666;
+ font-size:18px;
+ text-transform: none;
+  font-weight: 300;
+ margin-bottom: 20px;
+
+    
+}
+
+
+/*story social */
+.social{
+    width: 175px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.social a{
+margin-right:5px;
+    
+}
+
+.social a:hover{
+    opacity: .5;
+    
+}
+/*close story social */
+
+
+
+
+/*paragraph spacing for body copy*/
+.container p{
+margin-bottom:15px;
+}
+
+
+/*image that goes the full width of wrapper*/
+.full{
+    width:100%;
+}
+
+/*image that goes the half width of wrapper. */
+.half{
+    width:49.5%;
+    margin-top:3px;
+    margin-bottom: 10px;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+
+
+/**************caption styles*************/
+
+figcaption{
+font-size: 13px;
+color:#666;
+line-height: 1.3;
+
+}
+
+/*mobile captions hidden so that when images go from side by side to stacked the caption labels make sense*/
+.desktop_caption{
+display: block; 
+    
+}
+
+.mobile_caption{
+    display: none;
+}
+
+/* OPEN styles for vertical images that are floated left with a caption*/
+
+#nfp1 {
+width:100%;
+margin-bottom: 10px;
+}
+
+.figureHalfLeftSpacing{
+   margin-right:25px;
+   margin-bottom:50px; 
+}
+
+.figureHalfLeftSpacingShallow{
+   margin-right:25px;
+   margin-bottom:25px; 
+}
+/* CLOSE styles for vertical images that are floated left with a caption*/
+
+
+/*spacing for full width images with captions directly below them*/
+#nfp7, #nfp8, #nfp9{
+ margin-bottom: 10px;   
+}
+
+/*spacing for full width images with captions that are stacked*/
+.belowcaption_forty{
+ margin-bottom: 40px;   
+}
+
+/***********captions styles******************/
+
+/*next story button*/
+#nextstory {
+background-color: #1696d2;
+    border: medium none;
+    color: #ffffff;
+    position: fixed;
+    text-align: left;
+    display: inline;
+    right: -160px;
+    top: 530px;
+    font-family: lato;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 5px 0px 5px 10px;
+    width: 210px;
+    height: 65px;
+    transition: all.5s;
+    
+
+}
+}
+#nextstory a{
+ text-decoration: none;
+ color:#000000;     
+    
+}
+
+#nextstory .fa{
+
+}
+
+.hidden{
+    display: none;
+  
+}
+
+
+.hidden .emphasis{
+  font-size: 16px;
+      font-weight: 400;
+    text-transform: none;
+    text-transform: none;
+    
+}
+
+#nextstory:hover{
+ background-color:#000000;
+ cursor:pointer;
+    right: 0px;
+ width: 210px;
+    height: 65px;
+
+}
+#nextstory:hover .hidden{
+    display:inline-block;
+      font-size: 14px;
+    color: #fff;
+    position: relative;
+    line-height: 1.4;
+    font-weight: 500;
+    text-transform: uppercase;
+    left: 5px;
+    top: 5px;
+   
+}
+/***********next story button ******************/
+
+
+
+
+
+/****************previous story button *******************/
+#prevstory {
+
+background-color: #1696d2;
+    border: medium none;
+    color: #ffffff;
+    position: fixed;
+    text-align: right;
+    display: inline;
+    left: -160px;
+    top: 530px;
+    font-family: lato;
+    font-size: 35px;
+    font-weight: 400;
+ padding: 7px 10px 5px 10px;
+    width: 210px;
+    height: 65px;
+    transition: all.5s;
+
+}
+
+#prevstory a{
+ text-decoration: none;
+ color:#000000;     
+    
+}
+
+
+.hidden{
+    display: none;
+  
+}
+
+
+.hidden .emphasis{
+  font-size: 16px;
+      font-weight: 400;
+    text-transform: none;
+    text-transform: none;
+    
+}
+
+#prevstory:hover{
+ background-color:#000000;
+ cursor:pointer;
+    left: 0px;
+ width: 210px;
+    height: 65px;
+    text-align: left;
+
+}
+#prevstory:hover .hidden{
+    display:inline-block;
+      font-size: 14px;
+    color: #fff;
+    position: relative;
+    line-height: 1.4;
+    font-weight: 500;
+    text-transform: uppercase;
+    left: 5px;
+    top: 5px;
+   
+
+   
+}
+/***********************/
+
+
+.storywrapper ul{
+line-height: 1.5;
+    margin-top:15px;
+    margin-bottom:40px;
+}
+
+/*browser windows smaller than 1100px*/
+@media (max-width: 1050px) {
+	
+#homecontainer{
+width: 850px;
+margin: 0 auto;
+padding-left: 249px;
+padding-top: 250px;}
+
+}
+
+
+@media (max-width: 950px) {
+.storywrapper{
+width:100%;
+margin:0 auto;
+padding-top:45px;
+}
+    
+#homecontainer{
+width: 650px;
+margin: 0 auto;
+padding-left: 249px;
+padding-top: 250px;
+
+}
+
+    
+.captions, figcaption{
+        padding-left:30px;
+        padding-right: 30px;
+}
+    
+.leadimage {
+height: 300px;
+width: 100%;
+}
+  
+.reddot{
+display: none; 
+}
+
+.reddotsmall{
+  display: block;
+  margin:0 auto;
+  width:100%;
+  max-width:350px;
+  padding-top:25px;
+}
+    
+    .twittercallout{
+float: right;
+width: 65%;
+padding: 0px 0px 50px 30px;
+    
+}
+
+}
+
+/*browser windows smaller than 850px*/
+@media (max-width: 850px) {
+	
+#homecontainer{
+max-width: 600px;
+width:100%;
+margin: 0 auto;
+padding-left: 225px;
+padding-top: 200px;
+}
+
+
+ 
+}
+
+/*browser windows smaller than 850px*/
+@media (max-width: 699px) {
+	
+#homecontainer, #mobilenavcontainer {
+width: 100%;
+margin: 0 auto;
+padding: 0px 25px 110px;
+}
+    
+.storywrapper{
+width:100%;
+margin:0 auto;
+padding: 0px 0px 45px;
+}
+
+.container{
+width:100%;
+margin:0 auto;
+padding:85px 30px 45px;
+}
+
+    h2{
+        font-size:26px;
+    }
+    
+    #prevstory, #nextstory{
+        top:490px;
+    }
+#sidebar{
+display: none;
+}
+ 
+    #mobilenavcontainer, .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+ .urbanHeaderLabel{
+    display:none;
+}
+
+.urbanHeaderLabelMobile{
+    display:inline-block;
+}   
+    
+
+#wrapper{
+width: 85%;
+margin: 0 auto;
+}
+    
+.leadimage {
+height: 250px;
+width: 100%;
+}
+
+.half{
+    width:100%;
+    margin-bottom: 10px;
+}
+#nfp3{
+    margin-bottom:3px;
+}
+    
+#nfp{
+    background-image: url(img/nfp/mobilestart.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.desktop_caption{
+display: none; 
+    
+}
+
+.mobile_caption{
+display: block;
+}
+    
+}
+
+@media (max-width: 450px) {
+    .reddotsmall{
+  display: block;
+  margin:0 auto;
+    width:100%;
+}
+    
+    #shareMaster{
+position: absolute;
+right: 0px;
+top: 0px;
+    }
+    
+    
+#socials{
+
+position: absolute;
+right: 24px;
+width: 45px;
+background-color: #fff;
+padding: 5px 25px 5px 20px;
+top: 50px;
+}
+ 
+.callOut{
+  font-size:22px;
+  color:#666;
+    font-weight: 300;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:3px;
+    background-color:#fff;
+    line-height: 1.4;
+
+    
+}
+
+.twittercallout{
+float: right;
+width: 65%;
+padding: 0px 0px 5px 15px;  
+}
+    
+   /* #socials{
+        position: absolute;
+right: 0px;
+width: 55px;
+background-color: #fff;
+padding: 15px 5px 15px 15px;
+top: 49px;
+    }*/
+}
+
+
+    
+@media (min-width: 1600px){
+    .leadimage{
+  height:500px;
+  width:100%;
+    
+}
+    
+}
