@@ -79,6 +79,7 @@ h5{
  font-size:22px;
  text-transform: none;
     font-weight: 300;
+    padding-bottom: 45px;
     
 }
 
@@ -245,7 +246,7 @@ h4{
 }
 #sidebar p{
 color: #e6e6e6;
-margin-left: 55px; 
+margin-left: 15px; 
     font-size:14px;
 
 }
@@ -394,6 +395,21 @@ margin-bottom:15px;
 .readmore{
     font-weight: 700;
 }
+
+#about h5{
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 5px;
+
+}
+#about .emphasis{
+ font-size:14px;
+ color:#666;
+
+    
+}
+
+
 
 /**********twitter styles******/
 .callOut{

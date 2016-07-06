@@ -500,6 +500,12 @@ margin-bottom:15px;
     font-weight: 700;
 }
 
+
+#about .emphasis{
+ font-size:14px;
+ color:#333;
+    
+}
 /**********twitter styles******/
 .callOut{
   font-size:27px;
