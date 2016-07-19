@@ -74,16 +74,6 @@ h1{
 }
 
 
-h5{
-  color:#666;
- font-size:22px;
- text-transform: none;
-    font-weight: 300;
-    padding-bottom: 45px;
-    
-}
-
-
 
 
 .credits{
@@ -130,6 +120,14 @@ p{
 .bold{
     font-weight:700;
     
+}
+
+.grey{
+ color:#666;
+}
+
+.upper{
+    text-transform: uppercase;
 }
 
 /*this is the smaller screens menu option*/
@@ -234,12 +232,6 @@ height: 100%;
 }
 
 
-h4{
-    font-size: 21px;
-    font-weight: 400;
-    color:#fff;
-  text-transform:capitalize;
-}
 
 .lowercase{
     text-transform: lowercase;
@@ -396,7 +388,7 @@ margin-bottom:15px;
     font-weight: 700;
 }
 
-#about h5{
+#about h3{
     font-weight: 700;
     padding-top: 15px;
     padding-bottom: 5px;
@@ -453,21 +445,22 @@ padding: 0px 0px 50px 30px;
     
 }
 
-#nfp{
-    background-image: url(../img/nfp/start.jpg);
+#MS{
+    background-image: url(../img/CA/20160523_Promise-Neighborhoods-SF_Thompson_0043-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 /*close image at top of each story*/
 
-#app{
-    background-image: url(../img/app/3074.jpg);
+#DC{
+    background-image: url(../img/DC/20160601_DCPNI_Thompson_0364-header1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#ghhi{
-    background-image: url(img/ghhi/header.jpg);
+#CA{
+    background-image: url(../img/CA/20160523_Promise-Neighborhoods-SF_Thompson_0043-header.jpg);
+   
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -550,25 +543,56 @@ H2{
 /*close story title */    
 
 
-/*section title */  
+/*subhead title */  
 h3{
-    margin-top: 35px;
-    margin-bottom: 5px;
+    font-size:22px;
+    font-weight: 300;
+    padding-bottom: 30px;
+    
+    /*margin-top: 35px;
+    margin-bottom: 5px;*/
 }
-/*close section title */  
+
+
+h4 /*white and uppercase label for stories on homepage*/{
+    color:#fff;
+    text-transform:capitalize;
+    font-weight:400;
+    font-size:22px;
+}
+
+h5{
+ font-size:18px;
+ text-transform: none;
+    font-weight: 400;
+}
 
 /*story summary*/
 h6{
-  color:#666;
- font-size:18px;
- text-transform: none;
-  font-weight: 300;
- margin-bottom: 20px;
 
-    
+ font-size:16px;
+ text-transform: none;
+  font-weight: 400;
+   
 }
 
+.demo_style /*styles for the demogrphaics section*/
+{
+    color:#666;
+    font-weight: 400;
+}
 
+.demo_spacing/*ul spacing for the demographics section*/
+{
+margin-bottom: 14px;
+    margin-top: 2px;
+    font-size: 14px;
+}
+
+.sectionpadding{
+    padding-top:25px;
+    padding-bottom:2px;
+}
 /*story social */
 .social{
     width: 175px;
@@ -810,8 +834,8 @@ background-color: #1696d2;
 
 .storywrapper ul{
 line-height: 1.5;
-    margin-top:15px;
-    margin-bottom:40px;
+  /*   margin-top:15px;
+   margin-bottom:40px;*/
 }
 
 /*browser windows smaller than 1100px*/
