@@ -636,6 +636,12 @@ margin-bottom:15px;
     margin-bottom: 10px;
 }
 
+/*image that goes 65% width of wrapper. */
+.overhalf{
+    width:65%;
+    margin-top:3px;
+    margin-bottom: 10px;
+}
 .left{
     float:left;
 }
