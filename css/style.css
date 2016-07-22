@@ -201,7 +201,7 @@ mobile a:focus {
 width: 250px;
 height: 100%;
 position: fixed;
-top:0;
+top:40px;
 bottom: 0;
      padding:0;
     margin:0;
@@ -245,26 +245,26 @@ margin-left: 15px;
 
 
 #photo1 {
-    background-image: url(img/photo1.jpg);
+    background-image: url(../img/photo1.jpg);
     background-repeat:no-repeat;
     background-size: cover;  
     
 }
 
 #photo2{
-    background-image: url(img/photo2.jpg);
+    background-image: url(../img/photo2.jpg);
         background-repeat:no-repeat;  
     background-size: cover;  
 }
 
 #photo3{
-    background-image: url(img/photo3.jpg);
+    background-image: url(../img/photo3.jpg);
         background-repeat:no-repeat;
       background-size: cover;  
 }
 
 #photo4{
-    background-image: url(img/photo4.jpg);
+    background-image: url(../img/photo1.jpg);
         background-repeat:no-repeat;
       background-size: cover;  
 }
@@ -274,11 +274,12 @@ margin-left: 15px;
     height:100%;
     display: block;
       color:#fff;
+     background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: solid 1px #fff;
 }
 
 #photo1 a:hover, #photo2 a:hover, #photo3 a:hover, #photo4 a:hover{
-    background-color: rgba(22, 150, 210, 0.7);
-   
+     background-color: rgba(22, 150, 210, 0.7);
 
    
 }
@@ -289,26 +290,26 @@ margin-left: 15px;
 
 #photo1 h4{
 position: absolute;
-bottom: 79%;
-margin-left: 15px;
+bottom: 86%;
+margin-left: 50px;
 }
 
 #photo2 h4{
  position: absolute;
-    bottom: 57%;
-    margin-left: 15px;       
+    bottom: 61%;
+    margin-left: 37px;     
 }
 
 #photo3 h4{
    position: absolute;
-    bottom: 32%;
-    margin-left: 15px;     
+    bottom: 36%;
+    margin-left: 20px;    
 }
 
 #photo4 h4{
  position: absolute;
-    bottom: 7.4%;
-    margin-left: 15px;       
+    bottom: 13%;
+    margin-left: 21px;     
 }
 
 
@@ -365,7 +366,7 @@ margin-top: 10px;
 width:950px;
 margin:0 auto;
 padding-left:250px;
-padding-top:250px;
+padding-top:300px;
 
 }
 
@@ -388,13 +389,13 @@ margin-bottom:15px;
     font-weight: 700;
 }
 
-#about h3{
+#project_credits h3{
     font-weight: 700;
     padding-top: 15px;
     padding-bottom: 5px;
 
 }
-#about .emphasis{
+#project_credits .emphasis{
  font-size:14px;
  color:#666;
 
@@ -556,9 +557,9 @@ h3{
 
 h4 /*white and uppercase label for stories on homepage*/{
     color:#fff;
-    text-transform:capitalize;
-    font-weight:400;
-    font-size:22px;
+    text-transform:uppercase;
+    font-weight:300;
+    font-size:20px;
 }
 
 h5{
@@ -580,6 +581,8 @@ h6{
 {
     color:#666;
     font-weight: 400;
+    width:100%;
+    margin-top:50px;
 }
 
 .demo_spacing/*ul spacing for the demographics section*/
@@ -690,6 +693,19 @@ margin-bottom: 10px;
 .belowcaption_forty{
  margin-bottom: 40px;   
 }
+
+
+
+/*********table styles************/
+td{
+ padding:4px;
+ border-bottom: 1px solid #dddddd;
+}
+
+.space_right{
+    padding-right:10px;
+}
+
 
 /***********captions styles******************/
 
