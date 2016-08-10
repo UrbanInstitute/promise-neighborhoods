@@ -198,13 +198,13 @@ mobile a:focus {
 
 /*sidebar structure */
 #sidebar{
-width: 250px;
-height: 100%;
-position: fixed;
-top:40px;
-bottom: 0;
-     padding:0;
-    margin:0;
+    width: 250px;
+    height: 97%;
+    position: fixed;
+    top: 24px;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
     display: inherit;
 }
 
@@ -223,8 +223,8 @@ height: 100%;
     background-color:#fff;
     float: left;
     width:250px;
-    height: 24%; /* fallback for non-calc() browsers */
-   height: calc(100% / 4);
+    height: 33%; /* fallback for non-calc() browsers */
+   height: calc(100% / 3);
     box-sizing: border-box;  
     text-transform: uppercase;
     color:#fff;
@@ -290,19 +290,19 @@ margin-left: 15px;
 
 #photo1 h4{
 position: absolute;
-bottom: 86%;
+bottom: 78%;
 margin-left: 50px;
 }
 
 #photo2 h4{
  position: absolute;
-    bottom: 61%;
+    bottom: 45%;
     margin-left: 37px;     
 }
 
 #photo3 h4{
    position: absolute;
-    bottom: 36%;
+    bottom: 13%;
     margin-left: 20px;    
 }
 
@@ -446,12 +446,14 @@ padding: 0px 0px 50px 30px;
     
 }
 
+
+/*close image at top of each story*/
+
 #MS{
-    background-image: url(../img/CA/20160523_Promise-Neighborhoods-SF_Thompson_0043-header.jpg);
+    background-image: url(../img/MS/4T3A4847.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-/*close image at top of each story*/
 
 #DC{
     background-image: url(../img/DC/20160601_DCPNI_Thompson_0364-header1.jpg);
@@ -465,6 +467,8 @@ padding: 0px 0px 50px 30px;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
 /**** headroom.js that allows the header to appear on scroll up **/
 
 #header{
@@ -485,25 +489,6 @@ nav img{
 padding-right:5px;
 }
 
-/* .slide {
-     transition: all 0.25s ease-in-out 0s;
-}
-
-.slide--reset {
-     transform: translateY(0px);
-}
-
-.slide--up {
-     transform: translateY(-230%);
-}
-
-.animated {
-     animation-duration: 0.5s;
-     animation-fill-mode: both;
-}
-*/
-
-/*wrapper for nonlanding page images */
 .storywrapper{
 width:950px;
 margin:0 auto;
@@ -583,6 +568,7 @@ h6{
     font-weight: 400;
     width:100%;
     margin-top:50px;
+   margin-bottom:50px;
 }
 
 .demo_spacing/*ul spacing for the demographics section*/
@@ -594,7 +580,7 @@ margin-bottom: 14px;
 
 .sectionpadding{
     padding-top:25px;
-    padding-bottom:2px;
+    padding-bottom:10px;
 }
 /*story social */
 .social{
@@ -639,6 +625,13 @@ margin-bottom:15px;
 /*image that goes 65% width of wrapper. */
 .overhalf{
     width:65%;
+    margin-top:3px;
+    margin-bottom: 10px;
+}
+
+/*image that goes the half width of wrapper. */
+.quarter{
+    width:30%;
     margin-top:3px;
     margin-bottom: 10px;
 }
@@ -687,6 +680,13 @@ margin-bottom: 10px;
    margin-right:25px;
    margin-bottom:25px; 
 }
+
+
+.figureHalfRightSpacing{
+   margin-left:25px;
+   margin-bottom:50px; 
+}
+
 /* CLOSE styles for vertical images that are floated left with a caption*/
 
 
@@ -703,8 +703,14 @@ margin-bottom: 10px;
 
 
 /*********table styles************/
+th{
+     padding-bottom:7px;
+    border-bottom: 2px solid #dddddd; 
+    margin-bottom: 20px;
+}
+
 td{
- padding:4px;
+ padding:7px 80px 7px 4px;
  border-bottom: 1px solid #dddddd;
 }
 
@@ -713,7 +719,22 @@ td{
 }
 
 
-/***********captions styles******************/
+
+
+/*pull quote styles*/
+
+.pull{
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 300;
+    color:#1696d2;
+    margin-bottom: 15px;
+}
+
+.attribute{
+    font-size:14px;
+    color:#666;
+}
 
 /*next story button*/
 #nextstory {
