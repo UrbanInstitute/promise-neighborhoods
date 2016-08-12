@@ -780,18 +780,24 @@ margin-bottom: 10px;
 
 /*********table styles************/
 th{
-     padding-bottom:7px;
+     padding-bottom:10px;
+    padding-top:10px;
     border-bottom: 2px solid #dddddd; 
-    margin-bottom: 20px;
+     border-top: 2px solid #dddddd; 
+    margin-bottom: 30px;
 }
 
 td{
- padding:7px 80px 7px 4px;
+ padding:10px 80px 7px 4px;
  border-bottom: 1px solid #dddddd;
 }
 
+td.bottom{
+    border-bottom: none; 
+}
+ 
 td.mission{
-   padding:0px;  
+   padding:10px 0px;  
 }
 .space_right{
     padding-right:10px;
