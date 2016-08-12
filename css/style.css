@@ -780,10 +780,10 @@ margin-bottom: 10px;
 
 /*********table styles************/
 th{
-     padding-bottom:10px;
-    padding-top:10px;
-    border-bottom: 2px solid #dddddd; 
-     border-top: 2px solid #dddddd; 
+     padding-bottom:15px;
+    padding-top:15px;
+    border-bottom: 1px solid #dddddd; 
+     border-top: 1px solid #dddddd; 
     margin-bottom: 30px;
 }
 
