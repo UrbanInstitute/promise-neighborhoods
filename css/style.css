@@ -158,6 +158,10 @@ p{
 
 /*this is the smaller screens menu option*/
 
+#mobilenavcontainer{
+    display: none;
+}
+
 
 .show-menu {
 
@@ -167,32 +171,12 @@ p{
 	text-align: center;
 	padding: 10px 0;
 	display: none;
-    margin-top:55px;
-}
-
-
-
-/*Hide checkbox*/
-input[type=checkbox]{
-    display: none;
-    
-}
-
-/*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ #menu{
-    display: block;
-    position: absolute;
-    top:99px;
-    width: 100%;
-}
-
-
-/*Create a horizontal list with spacing*/
-ul#menu li {
-	display:inline-block;
-	float: left;
+    margin-top:50px;
 
 }
+
+
+
 
 /*Style for menu links*/
 ul#menu li a {
@@ -201,6 +185,7 @@ ul#menu li a {
 	text-align: center;
 	color: #fff;
 	text-decoration: none;
+    background-color:#000;
 }
 
 /*Hover state for top level links*/
@@ -1050,15 +1035,48 @@ padding-top: 200px;
 
 
  
-}
 
 /*browser windows smaller than 850px*/
 @media (max-width: 699px) {
 	
-#homecontainer, #mobilenavcontainer {
+#homecontainer{
 width: 100%;
 margin: 0 auto;
 padding: 0px 25px 110px;
+}
+   
+#mobilenavcontainer {
+width: 100%;
+position: relative;
+top: 0px;
+height: 45px;
+    
+}
+    .show-menu{
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    background: #0096d2;
+    text-align: center;
+    padding: 10px 0;
+        
+    } 
+    
+    
+/*Hide checkbox*/
+input[type=checkbox]{
+display: none;
+    
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+    position: absolute;
+    top:50px;
+    width: 100%;
 }
     
 .storywrapper{
