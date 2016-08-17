@@ -66,15 +66,14 @@ a:hover{
     
 }
 
+/**********************HOMEPAGE STYLES*********************************/
+
 h1{
     font-weight: 700;
     font-size:35px;
     color:#000;
     margin-bottom: 5px;
 }
-
-
-
 
 .credits{
   font-size:12px;
@@ -83,6 +82,14 @@ h1{
     padding-bottom: 30px;
   
 }
+
+h4 /*white and uppercase label for stories on homepage*/{
+    color:#fff;
+    text-transform:uppercase;
+    font-weight:300;
+    font-size:20px;
+}
+
 
 .about{  
     font-size:15px;
@@ -102,173 +109,13 @@ h1{
         text-transform: uppercase;
 
 }
+
 #project_credits .emphasis{
  font-size:15px;
  color:#666;
-
-    
 }
 
 
-
-
-/*social media icons on index*/
-#homesocial{
-    width: 175px;
-    height: 40px;
-    margin-bottom: 10px;
-    margin-top: 60px;
-}
-
-#homesocial a{
-margin-right:5px;
-    
-}
-
-#homesocial a:hover{
-    opacity: .5;
-    
-}
-
-
-p{
-    color:#000;   
-}
-
-.lead{
-    font-size:19px;  
-}
-
-.emphasis{
-    font-style: italic; 
-}
-
-.bold{
-    font-weight:700;
-    
-}
-
-.grey{
- color:#666;
-}
-
-.upper{
-    text-transform: uppercase;
-}
-
-/*this is the smaller screens menu option*/
-
-#mobilenavcontainer{
-    display: none;
-}
-
-
-.show-menu {
-
-	text-decoration: none;
-	color: #fff;
-	background:#0096d2;
-	text-align: center;
-	padding: 10px 0;
-	display: none;
-    margin-top:50px;
-
-}
-
-
-
-
-/*Style for menu links*/
-ul#menu li a {
-	display:block;
-	min-width:140px;
-	text-align: center;
-	color: #fff;
-	text-decoration: none;
-    background-color:#000;
-}
-
-/*Hover state for top level links*/
-ul#menu li:hover a {
-  color: #0096d2;
-}
-
-/*Style for dropdown links*/
-ul#menu li:hover ul a {
-	background: #333;
-color:#fff;
-border-right-color: #222;
-    border-right:1px solid;
-    border-color: #222;
-    border-top:5px solid;
-    border-top-color:#222;
-
-}
-/*#mobilenavcontainer{
-    display: none;
-}
-
-.mobile{
-  display: none;
-position: absolute;
-width: 100%;
-top: 5px;
-height: 40px;
-margin-left: 0px;
-margin-top: 0px;
-right:100px;
-z-index:9;
-
-}
-.mobile div{
-    display: none;
-    top: 65px;
-position: relative;
-}
-
-.mobile button {
-position: absolute;
-top: 0px;
-right: 0px;
-border: 0;
-text-indent: 200%;
-overflow: hidden;
-background: rgba(255,255,255,0.8) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
-border: 1px solid #ddd;
-border-radius: 3px;
-background-size: 80%;
-width: 40px;
-height: 40px;
-outline: none;
--webkit-transition: all 400ms ease;
-transition: all 400ms ease;
-}
-
-.mobile button.expanded {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  background-color: transparent;
-
-}
-.mobile a {
-  display: block;
-     background: #eee;
-  text-align: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #ddd;
-  text-decoration: none;
-  color: #222;
-  font-weight: bold;
-}
-
-
-.mobile a:hover,
-.mobile a:active,
-mobile a:focus {
-  background: #e7e7e7;
-}
-
-*/
 
 /*sidebar structure */
 #sidebar{
@@ -301,8 +148,7 @@ height: 100%;
    height: calc(100% / 3);
     box-sizing: border-box;  
     text-transform: uppercase;
-    color:#fff;
-    
+    color:#fff;   
 }
 
 
@@ -310,10 +156,12 @@ height: 100%;
 .lowercase{
     text-transform: lowercase;
 }
+
+
 #sidebar p{
 color: #e6e6e6;
 margin-left: 15px; 
-    font-size:14px;
+font-size:14px;
 
 }
 
@@ -449,19 +297,92 @@ margin-bottom:15px;
 }
 
 
-.reddot{
-    display: block;
-    padding-top:25px;
+/**********************************HOMEPAGE STYLES CLOSE****************************/
+
+
+
+
+/* GENERAL TEXT STYLES */
+
+p{
+    color:#000;   
 }
 
-.reddotsmall{
-  display: none;  
+.lead{
+    font-size:19px;  
 }
+
+.emphasis{
+    font-style: italic; 
+}
+
+.bold{
+    font-weight:700;
+    
+}
+
+.grey{
+ color:#666;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
 
 
 .readmore{
     font-weight: 700;
 }
+
+
+
+
+
+
+/*menu for smaller screens*/
+
+#mobilenavcontainer{
+    display: none;
+}
+
+
+.show-menu {
+	display: none;
+    margin-top:50px;
+
+}
+
+
+/*Style for menu links*/
+ul#menu li a {
+    display: block;
+    min-width: 140px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    height: 36px;
+    padding-top: 8px;
+}
+
+/*Hover state for top level links*/
+ul#menu li:hover a {
+  color: #0096d2;
+}
+
+/*Style for dropdown links*/
+ul#menu li:hover ul a {
+	background: #333;
+color:#fff;
+border-right-color: #222;
+    border-right:1px solid;
+    border-color: #222;
+    border-top:5px solid;
+    border-top-color:#222;
+}
+
+
 
 
 
@@ -495,7 +416,10 @@ width: 40%;
 padding: 0px 0px 50px 30px;
     
 }
-/**************** story page *******************/
+
+
+
+/*************************************** story page **********************************/
 
 
 /*image at top of each story*/
@@ -530,7 +454,7 @@ padding: 0px 0px 50px 30px;
 }
 
 
-/**** headroom.js that allows the header to appear on scroll up **/
+
 
 #header{
     top: 50px;
@@ -550,15 +474,12 @@ nav img{
 padding-right:5px;
 }
 
+
 .storywrapper{
 width:950px;
 margin:0 auto;
 padding-top:80px;
 }
-/*close wrapper*/
-
-
-/*container for nonlanding page content */
 
 .container{
 width: 700px;
@@ -567,7 +488,7 @@ padding: 45px 30px 25px;
 clear: both;
 }
     
-/*close container*/
+
  
 .date{
     font-size: 12px;
@@ -579,7 +500,6 @@ clear: both;
 
 
 
-
 /*story title */  
 H2{
     font-style: italic;
@@ -587,7 +507,7 @@ H2{
     color:#1696d2;
     font-weight: 400;
 }
-/*close story title */    
+
 
 
 /*subhead title */  
@@ -595,18 +515,8 @@ h3{
     font-size:22px;
     font-weight: 300;
     padding-bottom: 30px;
-    
-    /*margin-top: 35px;
-    margin-bottom: 5px;*/
 }
 
-
-h4 /*white and uppercase label for stories on homepage*/{
-    color:#fff;
-    text-transform:uppercase;
-    font-weight:300;
-    font-size:20px;
-}
 
 h5{
  font-size:18px;
@@ -637,6 +547,12 @@ h6{
 margin-bottom: 14px;
     margin-top: 2px;
     font-size: 14px;
+}
+
+.demo_style p{
+    font-size:12px;
+    color:#666;
+    margin-top: 20px;
 }
 
 .sectionpadding{
@@ -813,6 +729,8 @@ td.mission{
     color:#666;
     line-height: 1.3;
 }
+/*close pull quote styles*/
+
 
 /*next story button*/
 #nextstory {
@@ -831,10 +749,9 @@ background-color: #1696d2;
     width: 210px;
     height: 65px;
     transition: all.5s;
-    
+}
 
-}
-}
+
 #nextstory a{
  text-decoration: none;
  color:#000000;     
@@ -846,7 +763,7 @@ background-color: #1696d2;
 }
 
 .hidden{
-    display: none;
+display: none;
   
 }
 
@@ -946,9 +863,6 @@ background-color: #1696d2;
     text-transform: uppercase;
     left: 5px;
     top: 5px;
-   
-
-   
 }
 /***********************/
 
@@ -958,6 +872,10 @@ line-height: 1.5;
   /*   margin-top:15px;
    margin-bottom:40px;*/
 }
+
+
+
+
 
 /*browser windows smaller than 1100px*/
 @media (max-width: 1050px) {
@@ -996,19 +914,7 @@ padding-top: 250px;
 height: 300px;
 width: 100%;
 }
-  
-.reddot{
-display: none; 
-}
 
-.reddotsmall{
-  display: block;
-  margin:0 auto;
-  width:100%;
-  max-width:350px;
-  padding-top:25px;
-}
-    
     .twittercallout{
 float: right;
 width: 65%;
@@ -1020,7 +926,7 @@ padding: 0px 0px 50px 30px;
     width:100%;
 }
 
-}
+
 
 /*browser windows smaller than 850px*/
 @media (max-width: 850px) {
@@ -1034,7 +940,6 @@ padding-top: 200px;
 }
 
 
- 
 
 /*browser windows smaller than 850px*/
 @media (max-width: 699px) {
@@ -1042,32 +947,42 @@ padding-top: 200px;
 #homecontainer{
 width: 100%;
 margin: 0 auto;
-padding: 0px 25px 110px;
+padding: 90px 25px 110px;
 }
-   
+  
+#subhead {
+display: none;
+}
+    
+    
 #mobilenavcontainer {
 width: 100%;
 position: relative;
 top: 0px;
 height: 45px;
+       
+
     
 }
     .show-menu{
     display: block;
     width: 100%;
-    position: absolute;
+    position: fixed;
     text-decoration: none;
     color: #fff;
     background: #0096d2;
     text-align: center;
     padding: 10px 0;
+   
         
     } 
     
     
 /*Hide checkbox*/
-input[type=checkbox]{
+input[type=checkbox]:unchecked ~ #menu{
 display: none;
+visibility:hidden;
+
     
 }
 
@@ -1075,8 +990,16 @@ display: none;
 input[type=checkbox]:checked ~ #menu{
     display: block;
     position: absolute;
-    top:50px;
+    top: 85px;
     width: 100%;
+    height: 150px;
+       z-index: 10;
+   
+}
+    
+ul#menu {
+float:none;
+display: none;   
 }
     
 .storywrapper{
@@ -1125,6 +1048,8 @@ margin: 0 auto;
 .leadimage {
 height: 250px;
 width: 100%;
+position: relative;
+top: 40px;
 }
 
 .half{
